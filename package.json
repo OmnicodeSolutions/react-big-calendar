@@ -1,14 +1,14 @@
 {
-  "name": "react-big-calendar",
+  "name": "@omnicodesolutions/react-big-calendar",
   "version": "0.23.0",
   "description": "Calendar! with events",
   "author": {
-    "name": "Jason Quense",
-    "email": "monastic.panic@gmail.com"
+    "name": "Omnicode Solutions",
+    "email": "develop@omnicode.solutions"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jquense/react-big-calendar.git"
+    "url": "git+https://github.com/OmnicodeSolutions/react-big-calendar.git"
   },
   "license": "MIT",
   "main": "lib/index.js",
@@ -144,9 +144,8 @@
     "babel-core": "7.0.0-bridge.0"
   },
   "bugs": {
-    "url": "https://github.com/jquense/react-big-calendar/issues"
+    "url": "https://github.com/OmnicodeSolutions/react-big-calendar/issues"
   },
-  "readme": "ERROR: No README data found!",
-  "homepage": "https://github.com/jquense/react-big-calendar#readme",
-  "_id": "react-big-calendar@0.22.1"
+  "readme": "https://github.com/OmnicodeSolutions/react-big-calendar#readme",
+  "homepage": "https://github.com/OmnicodeSolutions/react-big-calendar#readme"
 }
