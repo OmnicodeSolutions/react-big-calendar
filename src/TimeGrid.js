@@ -20,7 +20,11 @@ export default class TimeGrid extends Component {
   constructor(props) {
     super(props)
 
-    this.state = { gutterWidth: undefined, isOverflowing: null }
+    this.state = {
+      resources: this.props.resources,
+      gutterWidth: undefined,
+      isOverflowing: null,
+    }
 
     this.scrollRef = React.createRef()
     this.contentRef = React.createRef()
