@@ -1,5 +1,5 @@
-@import './variables';
-@import './time-column';
+@import "./variables";
+@import "./time-column";
 
 .rbc-slot-selection {
   z-index: 10;
@@ -69,14 +69,10 @@
   > .rbc-row.rbc-row-resource {
     border-bottom: 1px solid $cell-border;
   }
+}
 
-  // .rbc-gutter-cell {
-  //   flex: none;
-  // }
-
-  // > .rbc-gutter-cell + * {
-  //   width: 100%;
-  // }
+.rbc-time-header:hover {
+  cursor: pointer;
 }
 
 .rbc-time-header-cell-single-day {
@@ -95,9 +91,9 @@
     border-right: 1px solid $cell-border;
   }
 
-  >.rbc-row.rbc-row-resource {
-      border-bottom: 1px solid $cell-border;
-      flex-shrink: 0;
+  > .rbc-row.rbc-row-resource {
+    border-bottom: 1px solid $cell-border;
+    flex-shrink: 0;
   }
 }
 

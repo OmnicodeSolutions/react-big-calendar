@@ -75,14 +75,16 @@ class TimeGridHeader extends React.Component {
           >
             {resources.map(([id, resource]) => {
               return (
-                <div className="rbc-header">
-                  <span>
-                    <ResourceHeaderComponent
-                      index={id}
-                      label={accessors.resourceTitle(resource)}
-                      resource={resource}
-                    />
-                  </span>
+                <div
+                  resource={resource}
+                  className="rbc-header"
+                  onClick={() => this.props.onResourceChange([resource])}
+                >
+                  <ResourceHeaderComponent
+                    index={id}
+                    label={accessors.resourceTitle(resource)}
+                    resource={resource}
+                  />
                 </div>
               )
             })}
@@ -187,6 +189,7 @@ TimeGridHeader.propTypes = {
 
   onSelectSlot: PropTypes.func,
   onSelectEvent: PropTypes.func,
+  onResourceChange: PropTypes.func,
   onDoubleClickEvent: PropTypes.func,
   onDrillDown: PropTypes.func,
   getDrilldownView: PropTypes.func.isRequired,

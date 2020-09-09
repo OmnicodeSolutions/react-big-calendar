@@ -20,7 +20,11 @@ export default class TimeGrid extends Component {
   constructor(props) {
     super(props)
 
-    this.state = { gutterWidth: undefined, isOverflowing: null }
+    this.state = {
+      resources: this.props.resources,
+      gutterWidth: undefined,
+      isOverflowing: null,
+    }
 
     this.scrollRef = React.createRef()
     this.contentRef = React.createRef()
@@ -88,6 +92,10 @@ export default class TimeGrid extends Component {
     this.gutter = ref && findDOMNode(ref)
   }
 
+  onResourceChange = res => {
+    this.setState({ resources: res })
+  }
+
   handleSelectAlldayEvent = (...args) => {
     //cancel any pending selections so only the event click goes through.
     this.clearSelection()
@@ -114,7 +122,7 @@ export default class TimeGrid extends Component {
       dayLayoutAlgorithm,
     } = this.props
 
-    const resources = this.memoizedResources(this.props.resources, accessors)
+    const resources = this.memoizedResources(this.state.resources, accessors)
     const groupedEvents = resources.groupEvents(events)
 
     return range.map((date, jj) =>
@@ -155,7 +163,6 @@ export default class TimeGrid extends Component {
       rtl,
       selected,
       getNow,
-      resources,
       components,
       accessors,
       getters,
@@ -199,7 +206,7 @@ export default class TimeGrid extends Component {
       <div
         className={clsx(
           'rbc-time-view',
-          resources && 'rbc-time-view-resources'
+          this.state.resources && 'rbc-time-view-resources'
         )}
       >
         <TimeGridHeader
@@ -210,7 +217,8 @@ export default class TimeGrid extends Component {
           getNow={getNow}
           localizer={localizer}
           selected={selected}
-          resources={this.memoizedResources(resources, accessors)}
+          resources={this.memoizedResources(this.state.resources, accessors)}
+          onResourceChange={this.onResourceChange}
           selectable={this.props.selectable}
           accessors={accessors}
           getters={getters}
