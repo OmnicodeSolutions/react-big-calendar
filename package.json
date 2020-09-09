@@ -1,6 +1,6 @@
 {
   "name": "@omnicodesolutions/react-big-calendar",
-  "version": "0.27.0",
+  "version": "0.27.1",
   "description": "Calendar! with events",
   "author": {
     "name": "Omnicode Solutions",
@@ -147,5 +147,6 @@
     "url": "https://github.com/OmnicodeSolutions/react-big-calendar/issues"
   },
   "readme": "https://github.com/OmnicodeSolutions/react-big-calendar#readme",
-  "homepage": "https://github.com/OmnicodeSolutions/react-big-calendar#readme"
+  "homepage": "https://github.com/OmnicodeSolutions/react-big-calendar#readme",
+  "_id": "@omnicodesolutions/react-big-calendar@0.27.0"
 }
