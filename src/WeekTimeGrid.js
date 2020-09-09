@@ -10,7 +10,7 @@ import DayColumn from './DayColumn'
 import TimeGutter from './TimeGutter'
 
 import getWidth from 'dom-helpers/width'
-import TimeGridHeader from './TimeGridHeader'
+import TimeGridHeader from './WeekTimeGridHeader'
 import { notify } from './utils/helpers'
 import { inRange, sortEvents } from './utils/eventLevels'
 import Resources from './utils/Resources'
