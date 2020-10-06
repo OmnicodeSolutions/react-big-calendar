@@ -1,3 +1,9 @@
+## [0.28.0](https://github.com/omnicodesolutions/react-big-calendar/compare/v0.28.0...v0.27.0) (2020-10-06)
+
+### Features
+
+- We decided to work from Sundays to Saturdays, that means, `WorkWeek` is not restricted from Mondays to Fridays anymore.
+
 ## [0.27.0](https://github.com/omnicodesolutions/react-big-calendar/compare/v0.24.0...v0.22.1) (2020-09-09)
 
 ### Features
