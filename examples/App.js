@@ -106,7 +106,7 @@ class Example extends React.Component {
               {' | '}
               <a
                 target="_blank"
-                href="https://github.com/intljusticemission/react-big-calendar"
+                href="https://github.com/OmnicodeSolutions/react-big-calendar"
               >
                 <i className="fa fa-github" /> github
               </a>
