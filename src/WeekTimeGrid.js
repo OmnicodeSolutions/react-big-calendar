@@ -93,7 +93,9 @@ export default class TimeGrid extends Component {
   }
 
   onResourceChange = res => {
-    this.setState({ resources: res })
+    this.state.resources.length > 1
+      ? this.setState({ resources: res })
+      : this.setState({ resources: this.props.resources })
   }
 
   handleSelectAlldayEvent = (...args) => {
