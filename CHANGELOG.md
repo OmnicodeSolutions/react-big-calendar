@@ -1,3 +1,9 @@
+## [0.29.0](https://github.com/omnicodesolutions/react-big-calendar/compare/v0.29.0...v0.28.0) (2020-10-07)
+
+### Features
+
+- Finalize the implementation of OnResourceChange, with the option to go to the preview of the clicked room and return to the preview of all rooms when clicking again
+
 ## [0.28.0](https://github.com/omnicodesolutions/react-big-calendar/compare/v0.28.0...v0.27.0) (2020-10-06)
 
 ### Features
