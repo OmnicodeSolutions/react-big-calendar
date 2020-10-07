@@ -92,9 +92,9 @@ export default class TimeGrid extends Component {
     this.gutter = ref && findDOMNode(ref)
   }
 
-  onResourceChange = res => {
+  onResourceChange = resources => {
     this.state.resources.length > 1
-      ? this.setState({ resources: res })
+      ? this.setState({ resources })
       : this.setState({ resources: this.props.resources })
   }
 
