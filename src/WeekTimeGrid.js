@@ -129,13 +129,16 @@ export default class TimeGrid extends Component {
 
     return range.map((date, jj) =>
       resources.map(([id, resource], i) => {
-        let daysEvents = (groupedEvents.get(id) || []).filter(event =>
-          dates.inRange(
-            date,
-            accessors.start(event),
-            accessors.end(event),
-            'day'
-          )
+        let daysEvents = (groupedEvents.get(id) || []).filter(
+          event =>
+            dates.inRange(
+              date,
+              accessors.start(event),
+              accessors.end(event),
+              'day'
+            ) &&
+            accessors.start(event) >= dates.merge(date, min) &&
+            accessors.end(event) <= dates.merge(date, max)
         )
 
         return (
