@@ -1,3 +1,9 @@
+## [0.30.0](https://github.com/omnicodesolutions/react-big-calendar/compare/v0.30.0...v0.29.0) (2020-10-08)
+
+### Features
+
+- Fix bug that events outside of min and max are rendered
+
 ## [0.29.0](https://github.com/omnicodesolutions/react-big-calendar/compare/v0.29.0...v0.28.0) (2020-10-07)
 
 ### Features
